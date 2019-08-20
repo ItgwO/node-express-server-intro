@@ -16,3 +16,7 @@ app.get('/users', function(req,res){
 		users: mockUserData 
 	})
 })
+
+app.get('/users/:id',function(req,res){
+	console.log(req.params.id)
+})
